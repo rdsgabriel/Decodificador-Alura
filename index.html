@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Decodificador Alura</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<main>
+
+			<div class="logo">
+				<h1><img src="images/Frame 6.png"></h1>
+			</div>
+			
+			<ul class="setores">
+				<li>
+					<p id="aviso">Digite APENAS letras minúsculas e sem acentos.</p>
+					<form method="get">
+						<textarea cols="70" rows="10" name="entrada" id="mensagem" class="input-padrao" placeholder = "Digite seu texto aqui." autofocus></textarea>
+						<input type="button" value="Criptografar" id="enviado" class="botao1" onclick="criptografa()">
+					</form>
+				</li>
+				<li>
+					<form method="get">
+					<input type="button" value="Descriptografar" class="botao2" onclick="descriptografa()">
+					</form>
+				</li>
+				<li >
+					<form method="get" class="terceirobox">
+					<textarea cols="70" rows="12" name="saida" id="mensagem-saida" class="input-padrao2"></textarea>
+					
+					<img src="images/boy.png" class="imagem-chaves">
+					<input type="button" value="Copiar/Colar" class="botao3" onclick="copiar()">
+					</form>
+				</li>
+			</ul>
+			
+			<footer id="rodape">
+				
+                    &copy; Desenvolvido por <a href="https://www.linkedin.com/in/gabriel-rodrigues-835b02192/">Gabriel Rodrigues</a> - 2022</p>
+                    
+			</footer>
+
+		</main>
+
+		<script src="index.js"></script>
+	
+	</body>
+
+</html>
